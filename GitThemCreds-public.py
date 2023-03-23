@@ -14,14 +14,14 @@ parser.add_argument('--domain', type=str, help='Domain name to search on GitHub'
 args = parser.parse_args()
 
 #What's a tool without a banner?
-with open('.banner', 'r') as f:
+with open('banner', 'r') as f:
 	for line in f:
 		print(line.rstrip())
 print('\n')
 
 #Initializing all the things
 
-with open('.config.yaml', 'r') as stream:
+with open('config-public.yaml', 'r') as stream:
     try:
         config = yaml.safe_load(stream)
         print('\n[+] Config loaded!\n')
