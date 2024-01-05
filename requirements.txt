@@ -1,0 +1,7 @@
+requests
+argparse
+pyyaml
+colorama
+rich
+botocore
+boto3
